@@ -4,15 +4,23 @@ document.addEventListener('DOMContentLoaded', () => {
   const navLinks = [...document.querySelectorAll('.nav-link')];
   const sections = [...document.querySelectorAll('.content-section')];
 
-  hamburger?.addEventListener('click', () => sidebar.classList.toggle('open'));
+  if (hamburger && sidebar) {
+    hamburger.addEventListener('click', () => {
+      const isOpen = sidebar.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', String(isOpen));
+      document.body.classList.toggle('menu-open', isOpen);
+    });
+  }
 
   navLinks.forEach(link => {
     link.addEventListener('click', e => {
       e.preventDefault();
-      const targetId = link.getAttribute('href').slice(1);
-      const target = document.getElementById(targetId);
+      const targetId = link.getAttribute('href')?.slice(1);
+      const target = targetId ? document.getElementById(targetId) : null;
       if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
       sidebar?.classList.remove('open');
+      hamburger?.setAttribute('aria-expanded', 'false');
+      document.body.classList.remove('menu-open');
     });
   });
 
@@ -43,20 +51,22 @@ document.addEventListener('DOMContentLoaded', () => {
   let autoScroll;
 
   const show = i => {
+    if (!slides.length) return;
     slides[index].classList.remove('active');
     index = (i + slides.length) % slides.length;
     slides[index].classList.add('active');
   };
 
+  const stopAutoScroll = () => {
+    if (autoScroll) clearInterval(autoScroll);
+  };
+
   const startAutoScroll = () => {
     stopAutoScroll();
+    if (!slides.length) return;
     autoScroll = setInterval(() => {
       if (!lightbox.classList.contains('open')) show(index + 1);
     }, 4500);
-  };
-
-  const stopAutoScroll = () => {
-    if (autoScroll) clearInterval(autoScroll);
   };
 
   prev?.addEventListener('click', () => {
