@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://entomika.github.io/entomika/" target="_blank">
+  <a href="https://entomika.me/" target="_blank">
     <img src="https://img.shields.io/badge/Live%20Site-Portfolio-8F355C?style=for-the-badge" alt="Live Site">
   </a>
   <img src="https://img.shields.io/badge/Focus-Entomology-1F5B4B?style=for-the-badge" alt="Focus">
@@ -24,8 +24,8 @@ The website presents my academic journey, research interests, selected illustrat
 
 ## Live Demo
 
-- **Portfolio Website:** [Visit the live site](https://entomika.github.io/entomika/)
-- **Repository:** [View source code](https://github.com/entomika/entomika)
+- **Portfolio Website:** [Visit the live site](https://entomika.me/)
+- **Repository:** [View source code](https://entomika.me/)
 
 ---
 
