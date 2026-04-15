@@ -481,7 +481,9 @@ textarea:focus {
   }
 
   .main-content {
-    margin-left: 0;
+    margin-left: 300px;
+    max-width: 100%;
+    width: 100%;
     padding: 2.5rem 1.5rem 3rem;
   }
 
