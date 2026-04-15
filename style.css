@@ -1,8 +1,13 @@
 @media (max-width: 768px) {
-  html, body {
-    overflow-x: hidden;
-    width: 100%;
+  .quote-footer {
+    margin: 3rem 0 0;
+    padding: 0 1rem;
+    text-align: center;
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
   }
+}
 
   .page-shell {
     overflow-x: hidden;
