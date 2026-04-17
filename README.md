@@ -1,4 +1,4 @@
-# Mikaelison da S. Lima
+# Mikaelison da S. Lima 
 
 <p align="center">
   <strong>Entomologist • Scientific Illustrator • PhD Candidate in Biology</strong>
@@ -6,144 +6,126 @@
 
 <p align="center">
   <a href="https://entomika.me/" target="_blank">
-    <img src="https://img.shields.io/badge/Live%20Site-Portfolio-8F355C?style=for-the-badge" alt="Live Site">
+    <img src="https://img.shields.io/badge/Visit-Portfolio-8F355C?style=for-the-badge" alt="Portfolio">
   </a>
-  <img src="https://img.shields.io/badge/Focus-Entomology-1F5B4B?style=for-the-badge" alt="Focus">
-  <img src="https://img.shields.io/badge/Theme-Wine%20%26%20Teal-123C31?style=for-the-badge" alt="Theme">
+  <img src="https://img.shields.io/badge/Research-Entomology-1F5B4B?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Focus-IPM-123C31?style=for-the-badge">
 </p>
 
 ---
 
-## Overview
+## Research Profile
 
-This is my personal professional portfolio, created to showcase my work in entomology, insect field ecology, integrated pest management, and scientific illustration.
+I am an entomologist specializing in the **molecular biology of arthropods in agricultural systems**. My research focuses on understanding the complexity of pest population dynamics and on evaluating the effectiveness of both traditional and emerging control strategies to inform integrated pest management (IPM).
 
-The website presents my academic journey, research interests, selected illustrations, and professional contact information in a clean, responsive, and visually distinctive format.
+My PhD research characterizes **spider mite species in southwestern Ontario**, integrating:
+- Analysis of morphological diversity
+- Analysis of genetic diversity
+- Description of leaf damage patterns
+- Pesticide resistance status
+- Applied IPM strategies
 
----
-
-## Live Demo
-
-- **Portfolio Website:** [Visit the live site](https://entomika.me/)
-- **Repository:** [View source code](https://entomika.me/)
-
----
-
-## Features
-
-- Elegant sidebar layout with profile photo and professional introduction.
-- Active navigation highlighting based on scroll position.
-- Smooth scrolling between sections.
-- About Me section with research summary and CV download.
-- Education timeline with academic background.
-- Gallery section for photos, fieldwork moments, and illustrations.
-- Contact form for collaboration and professional inquiries.
-- Responsive design for desktop and mobile devices.
-- Custom wine-and-teal color palette for a refined visual identity.
+I combine **field resources, bench research, data analysis,** and **scientific illustration** to convey complex biological systems with clarity and precision.
 
 ---
 
-## About Me
+## Portfolio
 
-I am an entomologist with a strong interest in insect field ecology and integrated pest management. My current PhD research focuses on the identification, analysis, and management of spider mites in southwestern Ontario, including genetic diversity, pesticide resistance, and sustainable control strategies.
-
-My work combines research, field experience, and scientific illustration to communicate science clearly and creatively.
-
----
-
-## Education
-
-### PhD in Biology  
-**The University of Western Ontario**  
-2023 – Present  
-Thesis: *Integrated Pest Management of Spider Mites*  
-Supervisor: Dr. Vojislava Grbić
-
-### MSc in Entomology  
-**University of Nebraska-Lincoln**  
-2021 – 2023  
-Thesis: *Soybean Gall Midge Abundance*  
-Supervisor: Dr. Justin McMechan
-
-### BSc in Agronomy  
-**Universidade Federal de Viçosa**  
-2016 – 2020  
-Thesis: *Whitefly (Bemisia tabaci) Sampling*  
-Supervisor: Dr. Marcelo Picanco
+- Website: [entomika.me](https://entomika.me/)
+- Artistry: [EntomInk](https://entomika.me/entomink/)
+- Outreach: [<i>Frass & Exuviae</i>](https://entomika.me/entomink/)  
+- Source: [github.com/Entomika](https://github.com/Entomika)
 
 ---
 
-## Gallery
+## Core Features
 
-The gallery features selected moments from my academic and field journey, including insect illustrations, outreach activities, conferences, fieldwork, and personal experiences connected to nature and science.
-
----
-
-## Technologies Used
-
-- HTML5
-- CSS3
-- JavaScript
-- Google Fonts
+- Clean, research/outreach-oriented layout with intuitive navigation  
+- Scroll-based active section highlighting  
+- Scientific illustration and fieldwork gallery  
+- Academic timeline and CV access  
+- Responsive design (desktop + mobile)  
+- Refined teal visual identity  
 
 ---
 
-## Design Notes
+## Academic Background
 
-This portfolio uses a modern dark aesthetic with wine as the primary color and teal as an accent. The design emphasizes clarity, contrast, and elegance while keeping the layout practical and easy to navigate.
+PhD in Biology — University of Western Ontario (2023–Present)  
+Thesis: [Integrated Pest Management of Spider Mites Amid Increasing Population Complexity in the Agriculture of Southwestern Ontario.](https://ir.lib.uwo.ca/inspiringminds/819/)  
+Supervisor: Dr. Vojislava Grbić  
+
+MSc in Entomology — University of Nebraska–Lincoln (2021–2023)  
+Thesis: [Spatiotemporal dynamics of Soybean Gall Midge in the soil.](https://digitalcommons.unl.edu/embargotheses/273/)  
+Supervisor: Dr. Justin McMechan  
+
+BSc in Agronomy — Universidade Federal de Viçosa (2016–2020)  
+Thesis: [Feasible sampling plan for the whitefly <i>Bemisia tabaci</i> in bell pepper crops.](https://resjournals.onlinelibrary.wiley.com/doi/10.1111/afe.12655)  
+Supervisor: Dr. Marcelo Picanco  
+
+---
+
+## Scientific Interests
+
+- Arthropod ecology
+- Agricultural entomology  
+- Integrated pest management
+- Population dynamics
+- Pesticide resistance
+- Molecular biology
+- Experimentation and data analysis
+- Science communication
+- Scientific illustration
+
+---
+
+## Tech Stack
+
+- HTML5  
+- CSS3  
+- JavaScript  
+- Google Fonts  
 
 ---
 
 ## Project Structure
 
 ```bash
-project-folder/
+project/
 ├── index.html
 ├── style.css
 ├── script.js
-├── your-photo.jpg
-├── about-photo.jpg
-├── gallery-1.jpg
-├── gallery-2.jpg
-├── gallery-3.jpg
-├── your-cv.pdf
+├── assets/
+│   ├── images/
+│   └── cv/
 └── README.md
 ```
 
 ---
 
-## Getting Started
+## Local Setup
 
-To run this project locally:
-
-1. Clone the repository.
-2. Open `index.html` in your browser.
-3. Make sure all images and documents are in the correct folder.
-4. Update links, captions, and contact details as needed.
-
----
-
-## Customization
-
-You can personalize this portfolio by updating:
-- Profile photo and gallery images.
-- Biography and research description.
-- Education details.
-- CV link.
-- Contact form text and social links.
-- Colors, spacing, and typography.
+1. Clone the repository  
+2. Open `index.html`  
+3. Ensure assets are correctly linked  
 
 ---
 
 ## Contact
 
-This portfolio represents my academic, research, and creative work as an entomologist and scientific illustrator.
-
-- **Location:** London, Ontario, Canada
-- **Focus:** Entomology, spider mites, integrated pest management, and scientific illustration
+Location: London, Ontario, Canada  
+Website: https://entomika.me/  
 
 ---
 
 ## License
 
-This project is for personal portfolio use.
+Personal academic portfolio
+
+---
+
+<p align="right"><em>
+<i>“Science is the belief in the ignorance of experts...<br>
+If you find science boring, you're learning it from a wrong teacher.</i>”<br>
+— Richard Feynman (paraphrased)
+</em></p>
