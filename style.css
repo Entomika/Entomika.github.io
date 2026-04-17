@@ -75,7 +75,7 @@ body {
   height: min(190px, 100vw - 120px);
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid rgba(255, 255, 255, 0.12);
+  border: 3px solid rgba(6, 134, 83, 0.451);
   box-shadow: var(--shadow);
 }
 
