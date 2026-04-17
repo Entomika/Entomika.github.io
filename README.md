@@ -125,7 +125,7 @@ Personal academic portfolio
 ---
 
 <p align="right"><em>
-<i>“Science is the belief in the ignorance of experts...<br>
-If you find science boring, you're learning it from a wrong teacher.</i>”<br>
+“Science is the belief in the ignorance of experts...<br>
+If you find science boring, you're learning it from a wrong teacher.”</em><br>
 — Richard Feynman (paraphrased)
-</em></p>
+</p>
