@@ -9,6 +9,8 @@
   --border-light: rgba(255, 255, 255, 0.09);
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
   --sidebar-width: 320px;
+  --link-color: #0c7a4e;
+  --link-hover: #5cd199;
 }
 
 html,
@@ -280,17 +282,17 @@ body {
 
 .degree-item {
   display: grid;
-  grid-template-columns: 84px 1fr;
-  gap: 1.2rem;
-  align-items: start;
+  grid-template-columns: 120px 1fr;
+  gap: 1.8rem;
+  align-items: center;
 }
 
 .degree-logo-wrap {
-  width: 84px;
-  height: 84px;
+  width: 120px;
+  height: 120px;
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.06);
-  border: 1px solid var(--border-light);
+  border: 3px solid var(--border-light);
   padding: 0.7rem;
   display: flex;
   align-items: center;
@@ -572,4 +574,34 @@ textarea:focus {
 .author {
   font-size: 0.85rem;
   opacity: 0.8;
+}
+
+a:not(.nav-link):not(.cv-button):not(.submit-btn):not(.social-links a) {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:not(.nav-link):not(.cv-button):not(.submit-btn):not(.social-links a):hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.extra-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cta-box {
+  text-align: center;
+}
+
+.extra-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
