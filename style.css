@@ -291,7 +291,7 @@ body {
   width: 120px;
   height: 120px;
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(196, 224, 213, 0.548);
   border: 3px solid var(--border-light);
   padding: 0.7rem;
   display: flex;
@@ -300,8 +300,8 @@ body {
 }
 
 .degree-logo {
-  width: 100%;
-  height: 100%;
+  width: 115%;
+  height: 115%;
   object-fit: contain;
 }
 
