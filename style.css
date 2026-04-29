@@ -9,8 +9,9 @@
   --border-light: rgba(255, 255, 255, 0.09);
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
   --sidebar-width: 320px;
-  --link-color: #0c7a4e;
+  --link-color: #388968;
   --link-hover: #5cd199;
+  --spacing-lg: 2rem;
 }
 
 html,
@@ -280,11 +281,52 @@ body {
   backdrop-filter: blur(16px);
 }
 
+.timeline-item p {
+  margin-bottom: 0.65rem;
+  color: var(--text-muted);
+}
+
+.research-outreach-content .full {
+  margin-bottom: 1.5rem;
+}
+
+.split {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.text-column {
+  flex: 1;
+}
+
+.text-column p+p {
+  margin-top: 1rem;
+}
+
+.research-outreach-photo-wrap {
+  flex: 1;
+  max-width: 400px;
+}
+
+.research-outreach-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+
+.research-outreach-text {
+  margin-bottom: 1.5rem;
+}
+
 .degree-item {
   display: grid;
   grid-template-columns: 120px 1fr;
   gap: 1.8rem;
-  align-items: center;
+  align-items: start;
 }
 
 .degree-logo-wrap {
@@ -319,10 +361,6 @@ body {
   color: #9de7c6;
 }
 
-.timeline-item p {
-  margin-bottom: 0.65rem;
-  color: var(--text-muted);
-}
 
 .carousel-container {
   max-width: 1000px;
@@ -466,15 +504,42 @@ textarea:focus {
   pointer-events: auto;
 }
 
+.lightbox-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 95vw;
+  max-height: 95vh;
+}
+
 .lightbox img {
   max-width: min(92vw, 1400px);
-  max-height: 88vh;
+  max-height: 80vh;
   width: auto;
   height: auto;
   object-fit: contain;
   border-radius: 16px;
   box-shadow: var(--shadow);
   cursor: zoom-out;
+}
+
+.lightbox-caption {
+  margin-top: 1rem;
+  color: var(--text-light);
+  font-size: 0.95rem;
+  text-align: center;
+  max-width: 800px;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+.research-outreach-photo {
+  cursor: zoom-in;
+  transition: transform 0.25s ease;
+}
+
+.research-outreach-photo:hover {
+  transform: scale(1.02);
 }
 
 @media (max-width: 992px) {
@@ -556,6 +621,12 @@ textarea:focus {
   }
 }
 
+@media (max-width: 768px) {
+  .split {
+    flex-direction: column;
+  }
+}
+
 .quote-footer {
   max-width: 900px;
   margin: 20px 20px 3px auto;
@@ -593,10 +664,11 @@ a:not(.nav-link):not(.cv-button):not(.submit-btn):not(.social-links a):hover {
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
+  margin-top: var(--spacing-lg);
 }
 
 .cta-box {
-  text-align: center;
+  text-align: left;
 }
 
 .extra-links {
