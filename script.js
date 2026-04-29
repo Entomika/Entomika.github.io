@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
   navLinks.forEach(link => {
     link.addEventListener('click', e => {
       const href = link.getAttribute('href');
-  
+
       if (!href) return;
-  
+
       if (href.startsWith('#')) {
         e.preventDefault();
         const target = document.querySelector(href);
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
           target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
       }
-  
+
       sidebar?.classList.remove('open');
     });
   });
@@ -36,21 +36,24 @@ document.addEventListener('DOMContentLoaded', () => {
   sections.forEach(section => observer.observe(section));
 
   const slides = [...document.querySelectorAll('.slide')];
+  const slideImages = [...document.querySelectorAll('.slide img')];
   const prev = document.querySelector('[data-prev]');
   const next = document.querySelector('[data-next]');
-  const slideImages = [...document.querySelectorAll('.slide img')];
+  const researchImages = [...document.querySelectorAll('.research-outreach-photo')];
 
   const lightbox = document.createElement('div');
   lightbox.className = 'lightbox';
-  lightbox.innerHTML = '<img alt="Expanded gallery image">';
+  lightbox.innerHTML = '<div class="lightbox-content"> <img alt="Expanded image"><p class="lightbox-caption"></p></div>';
   document.body.appendChild(lightbox);
   const lightboxImg = lightbox.querySelector('img');
+  const lightboxCaption = lightbox.querySelector('.lightbox-caption');
 
-  let index = slides.findIndex(s => s.classList.contains('active'));
+  let index = slides.length ? slides.findIndex(s => s.classList.contains('active')) : 0;
   if (index < 0) index = 0;
   let autoScroll;
 
   const show = i => {
+    if (!slides.length) return;
     slides[index].classList.remove('active');
     index = (i + slides.length) % slides.length;
     slides[index].classList.add('active');
@@ -77,21 +80,37 @@ document.addEventListener('DOMContentLoaded', () => {
     startAutoScroll();
   });
 
+  const openLightbox = (img) => {
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+    lightboxCaption.textContent = img.dataset.caption || '';
+    lightbox.classList.add('open');
+    stopAutoScroll();
+  };
+
   slideImages.forEach(image => {
     image.addEventListener('click', () => {
       const activeSlide = document.querySelector('.slide.active img');
-      if (activeSlide) {
-        lightboxImg.src = activeSlide.src;
-        lightboxImg.alt = activeSlide.alt;
-        lightbox.classList.add('open');
-        stopAutoScroll();
-      }
+      if (activeSlide) openLightbox(activeSlide);
     });
+  });
+
+  researchImages.forEach(image => {
+    image.addEventListener('click', () => openLightbox(image));
   });
 
   lightbox.addEventListener('click', () => {
     lightbox.classList.remove('open');
     startAutoScroll();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('open')) return;
+
+    if (e.key === 'Escape') {
+      lightbox.classList.remove('open');
+      startAutoScroll();
+    }
   });
 
   startAutoScroll();
